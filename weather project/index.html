@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active container-image">
+        <img src="images/homepage1.jpg" class="d-block w-100 img-home" alt="...">
+        <div class="text">
+          <h1>Real-Time Weather</h1>
+          <h4>Get real time weather insights at one place</h4>
+          <div class="input-modal">
+            <input type="text" id="search" placeholder="search any location">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="elem-container">
+    <div class="current-container">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 class="card-title">Current Weather</h6>
+          <p id="time">Time:   <span id='show-time'></span></p>
+          <h4 class="card-title"><b>Temp: </b> <span id="temp"></span> </h4>
+          <h6 class="card-title"><b>Wind Speed: </b><span id="wind"></span></h6>
+          <h6 class="card-title"><b>Relative Humidity: </b> <span id="humidity"></span></h6>
+          <h6 class="card-title"><b>Visibility: </b> <span id="visibility"></span></h6>
+          <!-- <h6 class="card-title"><b>Precipitation: </b></h6><h4 id="rain2"></h4>
+          <h6 class="card-title"><b>Precipitation: </b></h6><h4 id="rain3"></h4> -->
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 class="card-title"><b>Weather Forecast: </b><span id="today"></span></h6>
+          <h5 class="card-title"><b>Today's Weather Is: </b><span id="weather-type"></span></h5>
+          <h6 class="card-title"><b>Maximum: </b><span id="high"></span></h6>
+          <h6 class="card-title"><b>Minimum: </b><span id="low"></span></h6>
+          <h6 class="card-title"><b>Sunrise: </b><span id="sunrise"></span></h6>
+          <h6 class="card-title"><b>Sunset: </b><span id="sunset"></span></h6>
+
+        </div>
+      </div>
+
+      
+    </div>
+    <div class="current-container">
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h6 class="card-title" id="tomm"></h6>
+          <h6  class="card-title"><b>Day's High: </b><span id="high_tomm0"></span></h6>
+          <h6 class="card-title"><b>Day's Low: </b><span id="low_tomm0"></span></h6>
+          <h6 class="card-title"><b>Precipitation: </b><span id="prep0"></span></h6>
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h6 class="card-title" id="tomm1"></h6>
+          <h6 class="card-title"><b>Day's High: </b><span id="high_tomm1"></span></h6>
+          <h6 class="card-title"><b>Day's Low: </b><span id="low_tomm1"></span></h6>
+          <h6 class="card-title"><b>Precipitation: </b><span id="prep1"></span></h6>
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h6 class="card-title" id="tomm2"></h6>
+          <h6  class="card-title"><b>Day's High: </b><span id="high_tomm2"></span></h6>
+          <h6 class="card-title"><b>Day's Low: </b><span id="low_tomm2"></span></h6>
+          <h6 class="card-title"><b>Precipitation: </b><span id="prep2"></span></h6>
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h6 class="card-title" id="tomm3"></h6>
+          <h6  class="card-title"><b>Day's High: </b><span id="high_tomm3"></span></h6>
+          <h6 class="card-title"><b>Day's Low: </b><span id="low_tomm3"></span></h6>
+          <h6 class="card-title"><b>Precipitation: </b><span id="prep3"></span></h6>
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h6 class="card-title" id="tomm4"></h6>
+          <h6  class="card-title"><b>Day's High: </b><span id="high_tomm4"></span></h6>
+          <h6 class="card-title"><b>Day's Low: </b><span id="low_tomm4"></span></h6>
+          <h6 class="card-title"><b>Precipitation: </b><span id="prep4"></span></h6>
+          
+        </div>
+      </div>
+    </div>
+    graph
+  </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
